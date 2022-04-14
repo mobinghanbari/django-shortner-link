@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, HttpResponse
 from .models import Url
-from uuid import uuid4
+import uuid
 # Create your views here.
 
 def home(request):
@@ -9,7 +9,7 @@ def home(request):
 def create(request):
     if request.method == 'POST':
         link = request.POST['link']
-        uid = str(uuid4())[:5]
+        uid = str(uuid.uuid4())[:5]
         new_url = Url(link=link, uuid=uid)
         new_url.save()
         return HttpResponse(uid)
