@@ -32,6 +32,21 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/
 ```
+
+## for going to the admin panel
+
+### 1 . Enter the below command
+
+```
+python manage.py createsuperuser
+```
+
+### 2 . Go to the below address
+
+```
+http://127.0.0.1:8000/admin/
+```
+
 ## Call Me
 
 ### My email : mobingh717@gmail.com
