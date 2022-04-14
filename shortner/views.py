@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse
 from .models import Url
 from uuid import uuid4
 # Create your views here.
@@ -13,3 +13,7 @@ def create(request):
         new_url = Url(link=link, uuid=uid)
         new_url.save()
         return HttpResponse(uid)
+
+def go(request, pk):
+    url_details = Url.objects.get(uuid=pk).link
+    return redirect(url_details)
