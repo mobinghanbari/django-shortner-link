@@ -2,6 +2,10 @@
 
 short link web application with django framework
 
+## Warning
+
+I offer you to use Python 3.10.4 version to don't get the problem
+
 ## how to get run and use the project
 
 ### 1 . Clone the project 
