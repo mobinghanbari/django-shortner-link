@@ -9,7 +9,7 @@ short link web application with django framework
 ```
 git clone git@github.com:mobinghanbari/django-shortner-link.git
 
-cd urlshortner
+cd django-shortner-link
 ```
 
 ### 2 . Install the requirements 
